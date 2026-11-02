@@ -1,380 +1,126 @@
-/* VARIABLES & RESET */
+/* IMPORTATION POLICE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* VARIABLES COULEURS */
 :root {
     --primary-blue: #0d2a4d;
-    --secondary-blue: #1e4a7d;
-    --light-blue: #f0f4f8;
-    --text-dark: #333;
-    --text-gray: #666;
+    --secondary-blue: #1a4a7d;
+    --light-blue-bg: #f4f7f9;
+    --text-dark: #333333;
+    --text-gray: #666666;
     --white: #ffffff;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    color: var(--text-dark);
-    line-height: 1.6;
-}
-
-a { text-decoration: none; }
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { color: var(--text-dark); line-height: 1.6; background: var(--white); }
+a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* HEADER / MENU */
-.navbar {
-    background: var(--white);
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+.navbar { background: var(--white); padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; gap: 30px; align-items: center; }
+.nav-links a { color: var(--text-dark); font-weight: 500; font-size: 0.95rem; transition: color 0.3s; position: relative; padding-bottom: 5px; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-blue); }
+.nav-links a.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--primary-blue); }
+.btn-nav { background: var(--primary-blue); color: var(--white); padding: 10px 20px; border-radius: 5px; font-weight: 600; font-size: 0.9rem; transition: background 0.3s; display: flex; align-items: center; gap: 8px; }
+.btn-nav:hover { background: var(--secondary-blue); }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* --- PAGE D'ACCUEIL --- */
 
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: var(--text-dark);
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover { color: var(--secondary-blue); }
-
-.btn-primary {
-    background: var(--primary-blue);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background 0.3s;
-}
-
-.btn-primary:hover { background: var(--secondary-blue); }
-
-/* SECTION HERO (ACCUEIL) */
-.hero {
-    background: var(--primary-blue);
+/* HERO ACCUEIL (Avec dégradé diagonal) */
+.hero-home {
+    position: relative;
+    background: linear-gradient(110deg, var(--primary-blue) 55%, rgba(13, 42, 77, 0.8) 55%, rgba(13, 42, 77, 0.4) 100%), 
+                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200') center/cover;
     color: var(--white);
     padding: 100px 0;
-    text-align: center;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* SECTIONS GLOBALES */
-.section { padding: 80px 0; }
-.bg-light { background: var(--light-blue); }
-
-.section-title {
-    color: var(--primary-blue);
-    font-size: 2rem;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-/* GRILLE POUR LES 3 OFFRES */
-.grid-3-cols { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-}
-
-.offer-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.offer-card:hover { transform: translateY(-5px); }
-
-.offer-card i {
-    font-size: 3rem;
-    color: var(--primary-blue);
-    margin-bottom: 20px;
-}
-
-.offer-card h3 {
-    color: var(--primary-blue);
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
-.offer-card p {
-    font-size: 0.95rem;
-    color: var(--text-gray);
-    margin-bottom: 20px;
-}
-
-.btn-outline {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--primary-blue);
-    color: var(--primary-blue);
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s;
-}
-
-.btn-outline:hover {
-    background: var(--primary-blue);
-    color: var(--white);
-}
-
-/* BANNIERE CONTACT (CTA) */
-.cta-banner {
-    background: var(--primary-blue);
-    color: var(--white);
-    border-radius: 15px;
-    padding: 40px;
+    min-height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 40px 0;
 }
+.hero-home-content { max-width: 600px; }
+.hero-home-content h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 15px; color: #e0e0e0; }
+.hero-home-content h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800; }
+.hero-home-content p { font-size: 1.1rem; margin-bottom: 40px; opacity: 0.9; line-height: 1.5; }
+.btn-white { background: var(--white); color: var(--primary-blue); padding: 12px 25px; border-radius: 5px; font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
+.btn-white:hover { transform: translateX(5px); }
 
-.cta-icon i { font-size: 3rem; opacity: 0.8; }
-.cta-text { flex: 1; }
-.cta-text h3 { color: var(--white); margin-bottom: 10px; font-size: 1.5rem; }
+/* ENJEUX */
+.section-enjeux { padding: 80px 0; }
+.enjeux-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: center; }
+.enjeux-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
+.enjeux-text p { color: var(--text-gray); font-size: 1.05rem; }
+.enjeux-boxes { background: var(--light-blue-bg); border-radius: 10px; padding: 30px; display: flex; justify-content: space-between; text-align: center; }
+.enjeu-box { flex: 1; padding: 0 15px; border-right: 1px solid #dce4eb; }
+.enjeu-box:last-child { border-right: none; }
+.enjeu-box i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 15px; }
+.enjeu-box h4 { color: var(--primary-blue); font-size: 1rem; margin-bottom: 10px; line-height: 1.3; }
+.enjeu-box p { font-size: 0.85rem; color: var(--text-gray); }
+
+/* NOS OFFRES (Cartes) */
+.section-offres { padding: 20px 0 80px 0; }
+.section-title-left { color: var(--primary-blue); font-size: 2rem; margin-bottom: 40px; }
+.offres-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.card-offre { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; display: flex; flex-direction: column; border-bottom: 3px solid var(--primary-blue); }
+.card-offre img { width: 100%; height: 200px; object-fit: cover; }
+.card-icon { position: absolute; top: 160px; left: 20px; width: 70px; height: 70px; background: var(--primary-blue); color: var(--white); border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.8rem; border: 4px solid var(--white); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.card-body { padding: 45px 20px 25px 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.card-body h3 { color: var(--primary-blue); font-size: 1.15rem; margin-bottom: 15px; line-height: 1.3; }
+.card-body p { font-size: 0.9rem; color: var(--text-gray); margin-bottom: 20px; flex-grow: 1; }
+.card-link { color: var(--primary-blue); font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 5px; transition: gap 0.3s; }
+.card-link:hover { gap: 10px; }
+
+/* APPROCHE */
+.section-approche { background: var(--light-blue-bg); padding: 80px 0; }
+.approche-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: center; }
+.approche-left h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
+.approche-left p { color: var(--text-gray); margin-bottom: 30px; }
+.approche-steps { display: flex; justify-content: space-between; align-items: flex-start; }
+.step { flex: 1; text-align: center; position: relative; }
+.step-number { background: var(--white); border: 2px solid var(--primary-blue); color: var(--primary-blue); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 0.85rem; margin: 0 auto 15px auto; }
+.step i { font-size: 2.2rem; color: var(--primary-blue); margin-bottom: 15px; }
+.step h4 { color: var(--primary-blue); font-size: 1.05rem; margin-bottom: 5px; }
+.step p { font-size: 0.85rem; color: var(--text-gray); padding: 0 10px; }
+.step-arrow { color: #b0c4de; font-size: 1.2rem; margin-top: 30px; }
+
+/* POURQUOI NOUS CHOISIR */
+.section-pourquoi { padding: 80px 0; }
+.pourquoi-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center; }
+.pourquoi-img { border-radius: 10px; overflow: hidden; height: 100%; min-height: 350px; }
+.pourquoi-img img { width: 100%; height: 100%; object-fit: cover; }
+.pourquoi-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 30px; }
+.list-check { display: flex; flex-direction: column; gap: 15px; }
+.list-check li { display: flex; align-items: flex-start; gap: 15px; font-size: 1rem; color: var(--text-dark); }
+.list-check i { color: var(--primary-blue); font-size: 1.2rem; margin-top: 2px; }
+
+/* CTA / CONTACT BANNER */
+.cta-banner { background: var(--primary-blue); border-radius: 10px; padding: 40px; display: flex; align-items: center; justify-content: space-between; gap: 30px; color: var(--white); margin-bottom: 80px; }
+.cta-icon { font-size: 2.5rem; opacity: 0.8; }
+.cta-text { flex: 1; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 30px; }
+.cta-text h3 { font-size: 1.5rem; margin-bottom: 10px; }
 .cta-text p { font-size: 0.95rem; opacity: 0.9; }
 
-.btn-white {
-    background: var(--white);
-    color: var(--primary-blue);
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: background 0.3s;
-}
-.btn-white:hover { background: #e0e0e0; }
+/* --- PAGE OFFRE 1 (Spécifique) --- */
+.hero-offer { background: var(--primary-blue); color: var(--white); padding: 80px 0; }
+.hero-offer h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero-offer p { font-size: 1.2rem; opacity: 0.9; }
+.section-split { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; }
+.icon-circle { width: 60px; height: 60px; background: var(--primary-blue); color: var(--white); border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; margin: 0 auto; }
+.steps-container { display: flex; align-items: flex-start; justify-content: space-between; text-align: center; }
+.grid-5-cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; text-align: center; }
+.grid-4-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
 
-/* RESPONSIVE */
-
-/* --- STYLES SPECIFIQUES A LA PAGE OFFRE 1 --- */
-
-/* En-tête de l'offre (Hero) */
-.hero-offer {
-    background: var(--primary-blue);
-    color: var(--white);
-    padding: 60px 0;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.hero-offer-text { flex: 1; }
-.hero-offer-text h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px; }
-.hero-offer-text p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px; }
-.hero-line { width: 60px; height: 3px; background: var(--white); }
-.hero-offer-image { flex: 1; text-align: right; }
-.hero-offer-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-
-/* Bloc Enjeux & Démarche */
-.section-split {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 50px;
-}
-.check-list li { margin-bottom: 10px; font-weight: 500; }
-.check-list i { color: var(--primary-blue); margin-right: 10px; }
-
-.steps-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 20px;
-}
-.step { flex: 1; }
-.step h4 { color: var(--primary-blue); margin: 10px 0 5px; font-size: 1.1rem; }
-.step p { font-size: 0.85rem; color: var(--text-gray); }
-.step-arrow { color: var(--primary-blue); margin-top: 25px; opacity: 0.5; }
-.icon-circle {
-    width: 60px; height: 60px; background: var(--primary-blue); color: var(--white);
-    border-radius: 50%; display: flex; justify-content: center; align-items: center;
-    font-size: 1.5rem; margin: 0 auto;
-}
-
-/* Bloc Domaines d'intervention */
-.grid-5-cols { 
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
-    text-align: center; 
-}
-.domain-item { padding: 20px; border-right: 1px solid #ddd; }
-.domain-item:last-child { border-right: none; }
-.domain-item i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 15px; }
-.domain-item p { font-size: 0.9rem; font-weight: 500; color: var(--primary-blue); }
-
-/* Bloc Exemples de cursus (Cartes) */
-.card {
-    background: var(--white); border-radius: 10px; overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s;
-}
-.card:hover { transform: translateY(-5px); }
-.card img { width: 100%; height: 180px; object-fit: cover; }
-.card-content { padding: 20px; }
-.card-content h3 {
-    background: var(--primary-blue); color: var(--white); padding: 10px;
-    margin: -20px -20px 20px -20px; font-size: 1.1rem; text-align: left;
-}
-.card-content p { font-size: 0.9rem; color: var(--text-gray); margin-bottom: 15px; }
-.check-list-small li { font-size: 0.85rem; margin-bottom: 8px; color: var(--text-dark); }
-.check-list-small i { color: var(--primary-blue); margin-right: 8px; }
-
-/* Bloc Valeurs (Partenaire) */
-.grid-4-cols { 
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; 
-}
-.value-item i { font-size: 2rem; color: var(--primary-blue); margin-bottom: 15px; }
-.value-item p { font-size: 0.9rem; color: var(--text-gray); }
-.value-item strong { color: var(--text-dark); }
-
-/* Responsive pour ces nouveaux blocs */
+/* --- RESPONSIVE (Mobile) --- */
 @media (max-width: 992px) {
-    .section-split { grid-template-columns: 1fr; }
-    .hero-offer { flex-direction: column; text-align: center; }
-    .hero-offer-text .hero-line { margin: 0 auto; }
-    .grid-5-cols { grid-template-columns: repeat(2, 1fr); }
-    .domain-item { border-right: none; border-bottom: 1px solid #ddd; }
-    .grid-4-cols { grid-template-columns: repeat(2, 1fr); }
-    .steps-container { flex-direction: column; gap: 20px; }
-    .step-arrow { display: none; }
-}
-@media (max-width: 992px) {
-    .grid-3-cols { grid-template-columns: 1fr; }
-    .cta-banner { flex-direction: column; text-align: center; }
-    .nav-links { display: none; } /* Menu caché sur mobile pour l'instant */
-}
-
-/* --- STYLES SPECIFIQUES A LA PAGE D'ACCUEIL (MAQUETTE) --- */
-
-/* Hero Accueil */
-.hero-home {
-    background: linear-gradient(to right, var(--primary-blue) 50%, #1a3b60 100%);
-    color: var(--white);
-    padding: 60px 0;
-}
-.hero-home-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-.hero-home-text { flex: 1; }
-.hero-home-text h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; color: #a0c4e8; }
-.hero-home-text h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 20px; }
-.hero-home-text p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; max-width: 500px; }
-.hero-home-image { flex: 1; text-align: right; }
-.hero-home-image img { max-width: 100%; border-radius: 10px; }
-
-/* Section Enjeux */
-.section-enjeux { background: var(--white); padding: 60px 0; }
-.enjeux-container { display: flex; gap: 40px; align-items: center; }
-.enjeux-text { flex: 1; }
-.enjeux-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
-.enjeux-blocks { 
-    flex: 1.5; display: grid; grid-template-columns: repeat(3, 1fr); 
-    background: var(--light-blue); border-radius: 10px; padding: 30px; gap: 20px;
-}
-.enjeux-block { text-align: center; }
-.enjeux-block i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 15px; }
-.enjeux-block h4 { color: var(--primary-blue); font-size: 1.1rem; margin-bottom: 10px; }
-.enjeux-block p { font-size: 0.85rem; color: var(--text-gray); }
-
-/* Section Offres (Cartes avec images) */
-.offres-section { padding: 60px 0; }
-.offres-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.offre-card-home {
-    background: var(--white); border-radius: 10px; overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-bottom: 4px solid var(--primary-blue);
-    position: relative; display: flex; flex-direction: column;
-}
-.offre-card-home img { width: 100%; height: 180px; object-fit: cover; }
-.offre-icon-wrapper {
-    width: 70px; height: 70px; background: var(--primary-blue); color: var(--white);
-    border-radius: 50%; display: flex; justify-content: center; align-items: center;
-    font-size: 1.8rem; position: absolute; top: 145px; left: 20px;
-    border: 4px solid var(--white);
-}
-.offre-content-home { padding: 40px 20px 20px 20px; flex: 1; display: flex; flex-direction: column; }
-.offre-content-home h3 { color: var(--primary-blue); font-size: 1.2rem; margin-bottom: 15px; }
-.offre-content-home p { font-size: 0.9rem; color: var(--text-gray); margin-bottom: 20px; flex: 1; }
-.offre-link { color: var(--secondary-blue); font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 5px; }
-.offre-link:hover { text-decoration: underline; }
-
-/* Section Approche */
-.section-approche { background: var(--light-blue); padding: 60px 0; }
-.approche-container { display: flex; gap: 40px; align-items: center; }
-.approche-text { flex: 1; }
-.approche-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
-.approche-steps { 
-    flex: 2; display: flex; justify-content: space-between; align-items: flex-start; 
-    text-align: center; position: relative;
-}
-.approche-step { flex: 1; position: relative; z-index: 2; }
-.approche-step .step-number {
-    background: var(--white); border: 2px solid var(--primary-blue); color: var(--primary-blue);
-    width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
-    font-weight: 700; margin: 0 auto 10px auto; font-size: 0.9rem;
-}
-.approche-step i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 10px; }
-.approche-step h4 { color: var(--primary-blue); font-size: 1rem; margin-bottom: 5px; }
-.approche-step p { font-size: 0.8rem; color: var(--text-gray); }
-.step-arrow-home { color: #b0c4de; font-size: 1.5rem; margin-top: 20px; }
-
-/* Section Pourquoi nous choisir */
-.section-pourquoi { padding: 60px 0; }
-.pourquoi-container { display: flex; gap: 50px; align-items: center; }
-.pourquoi-image { flex: 1; border-radius: 10px; overflow: hidden; }
-.pourquoi-image img { width: 100%; height: 100%; object-fit: cover; }
-.pourquoi-text { flex: 1.2; }
-.pourquoi-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
-.list-check { list-style: none; padding: 0; }
-.list-check li { margin-bottom: 15px; font-size: 1rem; color: var(--text-dark); display: flex; align-items: flex-start; gap: 10px; }
-.list-check i { color: var(--primary-blue); margin-top: 5px; }
-
-/* Adaptation responsive pour la page d'accueil */
-@media (max-width: 992px) {
-    .hero-home-container, .enjeux-container, .approche-container, .pourquoi-container { flex-direction: column; text-align: center; }
-    .hero-home-text p { margin: 0 auto 30px auto; }
-    .enjeux-blocks, .offres-grid, .approche-steps { grid-template-columns: 1fr; flex-direction: column; gap: 30px; }
-    .step-arrow-home { display: none; }
-    .hero-home-image img { margin-top: 30px; }
+    .nav-links { display: none; }
+    .hero-home { padding: 60px 0; background: linear-gradient(to bottom, var(--primary-blue) 70%, rgba(13, 42, 77, 0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800') center/cover; }
+    .hero-home-content h1 { font-size: 2.2rem; }
+    .enjeux-grid, .approche-grid, .pourquoi-grid, .section-split, .hero-offer, .cta-banner { grid-template-columns: 1fr; flex-direction: column; text-align: center; }
+    .enjeux-boxes, .offres-grid, .approche-steps, .grid-5-cols, .grid-4-cols { flex-direction: column; display: flex; gap: 30px; }
+    .enjeu-box { border-right: none; border-bottom: 1px solid #dce4eb; padding-bottom: 20px; }
+    .enjeu-box:last-child { border-bottom: none; }
+    .cta-text { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; margin-top: 20px; }
 }
