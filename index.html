@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEIS Consulting - Accueil</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / MENU -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <!-- Remplace le texte par ton logo plus tard -->
+                <h2 style="color: var(--primary-blue); font-weight: 800;">EVEIS <span style="font-weight: 400;">Consulting</span></h2>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="offre-1.html">Nos offres</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#contact" class="btn-primary">Audit gratuit</a>
+        </div>
+    </header>
+
+    <!-- SECTION HERO (ACCUEIL) -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Accompagner vos transformations<br>par l'ingénierie des compétences</h1>
+                <p>Concevoir des parcours de formation performants, sur mesure, pour développer durablement les compétences de vos collaborateurs.</p>
+                <a href="offre-1.html" class="btn-white" style="display: inline-block; margin-top: 20px;">Découvrir mes offres <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION NOS 3 OFFRES -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Mes domaines d'expertise</h2>
+            <div class="grid-3-cols">
+                
+                <!-- Offre 1 -->
+                <div class="offer-card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Learning Architecture</h3>
+                    <p>Concevoir l'architecture globale de vos parcours de formation pour répondre à vos enjeux stratégiques.</p>
+                    <a href="offre-1.html" class="btn-outline">En savoir plus</a>
+                </div>
+
+                <!-- Offre 2 -->
+                <div class="offer-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Ingénierie Pédagogique</h3>
+                    <p>Créer des modalités sur mesure (présentiel, distanciel, blended) adaptées à vos publics.</p>
+                    <a href="offre-2.html" class="btn-outline">En savoir plus</a>
+                </div>
+
+                <!-- Offre 3 -->
+                <div class="offer-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Dispositifs Certifiants</h3>
+                    <p>Structurer des référentiels de compétences et mettre en place des parcours de certification.</p>
+                    <a href="offre-3.html" class="btn-outline">En savoir plus</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNIERE CONTACT (CTA) -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="cta-icon">
+                    <i class="far fa-envelope-open"></i>
+                </div>
+                <div class="cta-text">
+                    <h3>Parlons de votre projet</h3>
+                    <p>Prenons le temps d'échanger sur vos besoins. Je vous propose un premier audit gratuit, sans engagement, pour identifier ensemble les leviers d'action.</p>
+                </div>
+                <a href="mailto:contact@eveis-consulting.com" class="btn-white">Contactez-moi <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
