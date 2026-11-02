@@ -4,64 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVEIS Consulting - Accueil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER / MENU -->
+    <!-- HEADER -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <a href="index.html" style="color: var(--primary-blue); font-weight: 800; font-size: 1.5rem; text-decoration: none;">EVEIS <span style="font-weight: 400;">Consulting</span></a>
+                <!-- Remplacer par l'image du logo plus tard -->
+                <a href="index.html" style="color: var(--primary-blue); font-weight: 800; font-size: 1.5rem; letter-spacing: 1px;">EVEIS <span style="font-weight: 400; font-size: 1rem;">Consulting</span></a>
             </div>
             <nav class="nav-links">
-                <a href="index.html" style="color: var(--secondary-blue); border-bottom: 2px solid var(--secondary-blue); padding-bottom: 5px;">Accueil</a>
+                <a href="index.html" class="active">Accueil</a>
                 <a href="offre-1.html">Nos offres <i class="fas fa-chevron-down" style="font-size: 0.7em;"></i></a>
                 <a href="a-propos.html">À propos</a>
                 <a href="#">Références</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <a href="#contact" class="btn-primary"><i class="far fa-envelope"></i> Audit gratuit</a>
+            <a href="#contact" class="btn-nav"><i class="far fa-envelope"></i> Audit gratuit</a>
         </div>
     </header>
 
-    <!-- HERO ACCUEIL -->
+    <!-- HERO (Dégradé diagonal) -->
     <section class="hero-home">
-        <div class="container hero-home-container">
-            <div class="hero-home-text">
+        <div class="container">
+            <div class="hero-home-content">
                 <h3>EVEIS Consulting</h3>
                 <h1>Construire aujourd'hui<br>les compétences de demain</h1>
-                <div class="hero-line" style="margin-bottom: 20px;"></div>
                 <p>Conseil et accompagnement pour concevoir des dispositifs de formation sur mesure, au service de vos enjeux stratégiques.</p>
-                <a href="#offres" class="btn-white" style="display: inline-block; padding: 12px 25px; border-radius: 5px; font-weight: 600; text-decoration: none; color: var(--primary-blue); background: white;">Découvrir nos offres <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="hero-home-image">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Innovation et compétences">
+                <a href="#offres" class="btn-white">Découvrir nos offres <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION ENJEUX -->
+    <!-- ENJEUX -->
     <section class="section-enjeux">
-        <div class="container enjeux-container">
+        <div class="container enjeux-grid">
             <div class="enjeux-text">
                 <h2>Nos enjeux, vos ambitions</h2>
-                <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.6;">Face à l'évolution des métiers, à la transformation des organisations et aux nouveaux risques numériques, vous avez besoin de solutions fiables, concrètes et adaptées à votre contexte.</p>
+                <p>Face à l'évolution des métiers, à la transformation des organisations et aux nouveaux risques numériques, vous avez besoin de solutions fiables, concrètes et adaptées à votre contexte.</p>
             </div>
-            <div class="enjeux-blocks">
-                <div class="enjeux-block">
+            <div class="enjeux-boxes">
+                <div class="enjeu-box">
                     <i class="fas fa-chart-line"></i>
                     <h4>Développer<br>les compétences</h4>
                     <p>pour accompagner vos transformations</p>
                 </div>
-                <div class="enjeux-block">
+                <div class="enjeu-box">
                     <i class="fas fa-trophy"></i>
                     <h4>Répondre efficacement<br>à vos appels d'offres</h4>
                     <p>avec des propositions solides et différenciantes</p>
                 </div>
-                <div class="enjeux-block">
+                <div class="enjeu-box">
                     <i class="fas fa-shield-alt"></i>
                     <h4>Sensibiliser<br>à la cybersécurité</h4>
                     <p>pour une organisation plus résiliente</p>
@@ -70,42 +66,42 @@
         </div>
     </section>
 
-    <!-- SECTION NOS 3 OFFRES -->
-    <section class="offres-section" id="offres">
+    <!-- NOS OFFRES -->
+    <section class="section-offres" id="offres">
         <div class="container">
-            <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Nos trois offres</h2>
+            <h2 class="section-title-left">Nos trois offres</h2>
             <div class="offres-grid">
                 
                 <!-- Offre 1 -->
-                <div class="offre-card-home">
+                <div class="card-offre">
                     <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" alt="Formation">
-                    <div class="offre-icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="offre-content-home">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="card-body">
                         <h3>Learning Architecture &<br>Ingénierie des compétences</h3>
                         <p>Concevoir des parcours de formation structurés et adaptés à vos enjeux.</p>
-                        <a href="offre-1.html" class="offre-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="offre-1.html" class="card-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Offre 2 -->
-                <div class="offre-card-home">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="Appels d'offres">
-                    <div class="offre-icon-wrapper"><i class="fas fa-handshake"></i></div>
-                    <div class="offre-content-home">
+                <div class="card-offre">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="AO">
+                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="card-body">
                         <h3>Accompagnement<br>aux réponses aux AO</h3>
                         <p>Vous accompagner pour analyser, structurer et valoriser vos réponses.</p>
-                        <a href="offre-2.html" class="offre-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="offre-2.html" class="card-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Offre 3 -->
-                <div class="offre-card-home">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Cybersécurité">
-                    <div class="offre-icon-wrapper"><i class="fas fa-shield-alt"></i></div>
-                    <div class="offre-content-home">
+                <div class="card-offre">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Cyber">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="card-body">
                         <h3>Sensibilisation<br>à la cybersécurité</h3>
                         <p>Sensibiliser vos équipes aux risques numériques et aux bons réflexes.</p>
-                        <a href="offre-3.html" class="offre-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="offre-3.html" class="card-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -113,37 +109,37 @@
         </div>
     </section>
 
-    <!-- SECTION NOTRE APPROCHE -->
+    <!-- APPROCHE -->
     <section class="section-approche">
-        <div class="container approche-container">
-            <div class="approche-text">
+        <div class="container approche-grid">
+            <div class="approche-left">
                 <h2>Notre approche</h2>
-                <p style="color: var(--text-gray); margin-bottom: 20px;">Une méthode éprouvée pour des solutions sur mesure, alliant vision stratégique et pragmatisme opérationnel.</p>
-                <a href="offre-1.html" class="btn-primary" style="display: inline-block; padding: 10px 20px; font-size: 0.9rem;">Notre démarche <i class="fas fa-arrow-right"></i></a>
+                <p>Une méthode éprouvée pour des solutions sur mesure, alliant vision stratégique et pragmatisme opérationnel.</p>
+                <a href="offre-1.html" class="btn-nav">Notre démarche <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="approche-steps">
-                <div class="approche-step">
+                <div class="step">
                     <div class="step-number">1</div>
                     <i class="fas fa-search"></i>
                     <h4>Analyser</h4>
                     <p>Comprendre vos enjeux et vos besoins</p>
                 </div>
-                <i class="fas fa-chevron-right step-arrow-home"></i>
-                <div class="approche-step">
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="step">
                     <div class="step-number">2</div>
                     <i class="fas fa-lightbulb"></i>
                     <h4>Concevoir</h4>
                     <p>Construire des solutions adaptées</p>
                 </div>
-                <i class="fas fa-chevron-right step-arrow-home"></i>
-                <div class="approche-step">
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="step">
                     <div class="step-number">3</div>
                     <i class="fas fa-cogs"></i>
                     <h4>Déployer</h4>
                     <p>Mettre en œuvre avec vos équipes</p>
                 </div>
-                <i class="fas fa-chevron-right step-arrow-home"></i>
-                <div class="approche-step">
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="step">
                     <div class="step-number">4</div>
                     <i class="fas fa-chart-line"></i>
                     <h4>Évaluer</h4>
@@ -153,11 +149,11 @@
         </div>
     </section>
 
-    <!-- SECTION POURQUOI NOUS CHOISIR -->
+    <!-- POURQUOI NOUS CHOISIR -->
     <section class="section-pourquoi">
-        <div class="container pourquoi-container">
-            <div class="pourquoi-image">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600" alt="Immeuble moderne">
+        <div class="container pourquoi-grid">
+            <div class="pourquoi-img">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Bâtiment">
             </div>
             <div class="pourquoi-text">
                 <h2>Pourquoi choisir EVEIS Consulting ?</h2>
@@ -172,21 +168,17 @@
         </div>
     </section>
 
-    <!-- BANNIERE CONTACT (CTA) -->
-    <section class="section" id="contact" style="padding-top: 0;">
-        <div class="container">
-            <div class="cta-banner">
-                <div class="cta-icon">
-                    <i class="far fa-envelope-open"></i>
-                </div>
-                <div class="cta-text">
-                    <h3>Parlons de vos projets</h3>
-                    <p>Un premier échange sans engagement pour identifier ensemble vos besoins et explorer les solutions adaptées.</p>
-                </div>
-                <a href="mailto:contact@eveis-consulting.com" class="btn-white">Nous contacter <i class="fas fa-arrow-right"></i></a>
+    <!-- CTA CONTACT -->
+    <div class="container" id="contact">
+        <div class="cta-banner">
+            <div class="cta-icon"><i class="far fa-envelope"></i></div>
+            <div class="cta-text">
+                <h3>Parlons de vos projets</h3>
+                <p>Un premier échange sans engagement pour identifier ensemble vos besoins et explorer les solutions adaptées.</p>
             </div>
+            <a href="mailto:contact@eveis-consulting.com" class="btn-white">Nous contacter <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
+    </div>
 
 </body>
 </html>
