@@ -185,6 +185,98 @@ ul { list-style: none; }
 .btn-white:hover { background: #e0e0e0; }
 
 /* RESPONSIVE */
+
+/* --- STYLES SPECIFIQUES A LA PAGE OFFRE 1 --- */
+
+/* En-tête de l'offre (Hero) */
+.hero-offer {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.hero-offer-text { flex: 1; }
+.hero-offer-text h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px; }
+.hero-offer-text p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px; }
+.hero-line { width: 60px; height: 3px; background: var(--white); }
+.hero-offer-image { flex: 1; text-align: right; }
+.hero-offer-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+/* Bloc Enjeux & Démarche */
+.section-split {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+}
+.check-list li { margin-bottom: 10px; font-weight: 500; }
+.check-list i { color: var(--primary-blue); margin-right: 10px; }
+
+.steps-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+.step { flex: 1; }
+.step h4 { color: var(--primary-blue); margin: 10px 0 5px; font-size: 1.1rem; }
+.step p { font-size: 0.85rem; color: var(--text-gray); }
+.step-arrow { color: var(--primary-blue); margin-top: 25px; opacity: 0.5; }
+.icon-circle {
+    width: 60px; height: 60px; background: var(--primary-blue); color: var(--white);
+    border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    font-size: 1.5rem; margin: 0 auto;
+}
+
+/* Bloc Domaines d'intervention */
+.grid-5-cols { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    text-align: center; 
+}
+.domain-item { padding: 20px; border-right: 1px solid #ddd; }
+.domain-item:last-child { border-right: none; }
+.domain-item i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 15px; }
+.domain-item p { font-size: 0.9rem; font-weight: 500; color: var(--primary-blue); }
+
+/* Bloc Exemples de cursus (Cartes) */
+.card {
+    background: var(--white); border-radius: 10px; overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; height: 180px; object-fit: cover; }
+.card-content { padding: 20px; }
+.card-content h3 {
+    background: var(--primary-blue); color: var(--white); padding: 10px;
+    margin: -20px -20px 20px -20px; font-size: 1.1rem; text-align: left;
+}
+.card-content p { font-size: 0.9rem; color: var(--text-gray); margin-bottom: 15px; }
+.check-list-small li { font-size: 0.85rem; margin-bottom: 8px; color: var(--text-dark); }
+.check-list-small i { color: var(--primary-blue); margin-right: 8px; }
+
+/* Bloc Valeurs (Partenaire) */
+.grid-4-cols { 
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; 
+}
+.value-item i { font-size: 2rem; color: var(--primary-blue); margin-bottom: 15px; }
+.value-item p { font-size: 0.9rem; color: var(--text-gray); }
+.value-item strong { color: var(--text-dark); }
+
+/* Responsive pour ces nouveaux blocs */
+@media (max-width: 992px) {
+    .section-split { grid-template-columns: 1fr; }
+    .hero-offer { flex-direction: column; text-align: center; }
+    .hero-offer-text .hero-line { margin: 0 auto; }
+    .grid-5-cols { grid-template-columns: repeat(2, 1fr); }
+    .domain-item { border-right: none; border-bottom: 1px solid #ddd; }
+    .grid-4-cols { grid-template-columns: repeat(2, 1fr); }
+    .steps-container { flex-direction: column; gap: 20px; }
+    .step-arrow { display: none; }
+}
 @media (max-width: 992px) {
     .grid-3-cols { grid-template-columns: 1fr; }
     .cta-banner { flex-direction: column; text-align: center; }
