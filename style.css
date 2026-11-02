@@ -282,3 +282,99 @@ ul { list-style: none; }
     .cta-banner { flex-direction: column; text-align: center; }
     .nav-links { display: none; } /* Menu caché sur mobile pour l'instant */
 }
+
+/* --- STYLES SPECIFIQUES A LA PAGE D'ACCUEIL (MAQUETTE) --- */
+
+/* Hero Accueil */
+.hero-home {
+    background: linear-gradient(to right, var(--primary-blue) 50%, #1a3b60 100%);
+    color: var(--white);
+    padding: 60px 0;
+}
+.hero-home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero-home-text { flex: 1; }
+.hero-home-text h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; color: #a0c4e8; }
+.hero-home-text h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 20px; }
+.hero-home-text p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; max-width: 500px; }
+.hero-home-image { flex: 1; text-align: right; }
+.hero-home-image img { max-width: 100%; border-radius: 10px; }
+
+/* Section Enjeux */
+.section-enjeux { background: var(--white); padding: 60px 0; }
+.enjeux-container { display: flex; gap: 40px; align-items: center; }
+.enjeux-text { flex: 1; }
+.enjeux-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
+.enjeux-blocks { 
+    flex: 1.5; display: grid; grid-template-columns: repeat(3, 1fr); 
+    background: var(--light-blue); border-radius: 10px; padding: 30px; gap: 20px;
+}
+.enjeux-block { text-align: center; }
+.enjeux-block i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 15px; }
+.enjeux-block h4 { color: var(--primary-blue); font-size: 1.1rem; margin-bottom: 10px; }
+.enjeux-block p { font-size: 0.85rem; color: var(--text-gray); }
+
+/* Section Offres (Cartes avec images) */
+.offres-section { padding: 60px 0; }
+.offres-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.offre-card-home {
+    background: var(--white); border-radius: 10px; overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-bottom: 4px solid var(--primary-blue);
+    position: relative; display: flex; flex-direction: column;
+}
+.offre-card-home img { width: 100%; height: 180px; object-fit: cover; }
+.offre-icon-wrapper {
+    width: 70px; height: 70px; background: var(--primary-blue); color: var(--white);
+    border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    font-size: 1.8rem; position: absolute; top: 145px; left: 20px;
+    border: 4px solid var(--white);
+}
+.offre-content-home { padding: 40px 20px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+.offre-content-home h3 { color: var(--primary-blue); font-size: 1.2rem; margin-bottom: 15px; }
+.offre-content-home p { font-size: 0.9rem; color: var(--text-gray); margin-bottom: 20px; flex: 1; }
+.offre-link { color: var(--secondary-blue); font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 5px; }
+.offre-link:hover { text-decoration: underline; }
+
+/* Section Approche */
+.section-approche { background: var(--light-blue); padding: 60px 0; }
+.approche-container { display: flex; gap: 40px; align-items: center; }
+.approche-text { flex: 1; }
+.approche-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
+.approche-steps { 
+    flex: 2; display: flex; justify-content: space-between; align-items: flex-start; 
+    text-align: center; position: relative;
+}
+.approche-step { flex: 1; position: relative; z-index: 2; }
+.approche-step .step-number {
+    background: var(--white); border: 2px solid var(--primary-blue); color: var(--primary-blue);
+    width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    font-weight: 700; margin: 0 auto 10px auto; font-size: 0.9rem;
+}
+.approche-step i { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 10px; }
+.approche-step h4 { color: var(--primary-blue); font-size: 1rem; margin-bottom: 5px; }
+.approche-step p { font-size: 0.8rem; color: var(--text-gray); }
+.step-arrow-home { color: #b0c4de; font-size: 1.5rem; margin-top: 20px; }
+
+/* Section Pourquoi nous choisir */
+.section-pourquoi { padding: 60px 0; }
+.pourquoi-container { display: flex; gap: 50px; align-items: center; }
+.pourquoi-image { flex: 1; border-radius: 10px; overflow: hidden; }
+.pourquoi-image img { width: 100%; height: 100%; object-fit: cover; }
+.pourquoi-text { flex: 1.2; }
+.pourquoi-text h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 20px; }
+.list-check { list-style: none; padding: 0; }
+.list-check li { margin-bottom: 15px; font-size: 1rem; color: var(--text-dark); display: flex; align-items: flex-start; gap: 10px; }
+.list-check i { color: var(--primary-blue); margin-top: 5px; }
+
+/* Adaptation responsive pour la page d'accueil */
+@media (max-width: 992px) {
+    .hero-home-container, .enjeux-container, .approche-container, .pourquoi-container { flex-direction: column; text-align: center; }
+    .hero-home-text p { margin: 0 auto 30px auto; }
+    .enjeux-blocks, .offres-grid, .approche-steps { grid-template-columns: 1fr; flex-direction: column; gap: 30px; }
+    .step-arrow-home { display: none; }
+    .hero-home-image img { margin-top: 30px; }
+}
