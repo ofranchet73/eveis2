@@ -3,204 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVEIS Consulting - Learning Architecture</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>EVEIS Consulting | Learning Architecture</title>
+    <meta name="description" content="Concevoir des parcours de formation performants pour accompagner durablement vos transformations.">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- HEADER / MENU -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html" style="color: var(--primary-blue); font-weight: 800; font-size: 1.5rem; text-decoration: none;">EVEIS <span style="font-weight: 400;">Consulting</span></a>
-            </div>
-            <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="offre-1.html" style="color: var(--secondary-blue);">Nos offres</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <a href="#contact" class="btn-primary">Audit gratuit</a>
-        </div>
-    </header>
+<header class="site-header">
+    <div class="header-inner">
 
-    <!-- HERO OFFRE -->
+        <a href="index.html" class="brand" aria-label="EVEIS Consulting - Accueil">
+            <span class="brand-arc"></span>
+            <span class="brand-name">EVEIS</span>
+            <span class="brand-subtitle">Consulting</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Accueil</a>
+
+            <div class="nav-dropdown">
+                <!-- Classe active sur "Nos offres" pour cette page -->
+                <a href="#offres" class="active">Nos offres <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="offre-1.html">Learning Architecture & Ingénierie des compétences</a>
+                    <a href="offre-2.html">Accompagnement aux réponses aux AO</a>
+                    <a href="offre-3.html">Sensibilisation à la cybersécurité</a>
+                </div>
+            </div>
+
+            <a href="a-propos.html">À propos</a>
+            <a href="#references">Références</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="audit-button">
+            <i class="fa-solid fa-envelope"></i>
+            Audit gratuit
+        </a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO OFFRE 1 -->
     <section class="hero-offer">
-        <div class="container" style="display: flex; align-items: center; gap: 40px;">
-            <div class="hero-offer-text">
-                <h1>Learning Architecture &<br>Ingénierie des compétences</h1>
-                <p>Concevoir des parcours de formation performants pour accompagner durablement vos transformations</p>
-                <div class="hero-line"></div>
-            </div>
-            <div class="hero-offer-image">
-                <!-- Image illustrant la main et les icônes -->
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Technologie et formation">
-            </div>
+        <div class="section-container">
+            <h1>Learning Architecture &<br>Ingénierie des compétences</h1>
+            <p>Concevoir des parcours de formation performants pour accompagner durablement vos transformations</p>
+            <span class="title-underline"></span>
         </div>
     </section>
 
-    <!-- SECTION ENJEUX & DEMARCHE -->
-    <section class="section bg-light">
-        <div class="container section-split">
-            <div class="enjeux">
-                <h2 style="color: var(--primary-blue); margin-bottom: 20px;">Des enjeux majeurs pour vos organisations</h2>
-                <p style="margin-bottom: 20px;">Face à l'évolution des métiers, aux nouvelles compétences à développer et aux attentes de vos collaborateurs, vous avez besoin de dispositifs de formation :</p>
-                <ul class="check-list">
-                    <li><i class="fas fa-check-circle"></i> Alignés sur votre stratégie et vos objectifs</li>
-                    <li><i class="fas fa-check-circle"></i> Adaptés à vos publics et à leurs besoins</li>
-                    <li><i class="fas fa-check-circle"></i> Durables et mesurables</li>
-                </ul>
-            </div>
-            <div class="demarche">
-                <h3 style="color: var(--primary-blue); margin-bottom: 20px;">Ma démarche : une approche structurée et sur mesure</h3>
-                <div class="steps-container">
-                    <div class="step">
-                        <div class="icon-circle"><i class="fas fa-search"></i></div>
-                        <h4>Analyser</h4>
-                        <p>Comprendre votre contexte, vos objectifs et vos publics</p>
-                    </div>
-                    <i class="fas fa-arrow-right step-arrow"></i>
-                    <div class="step">
-                        <div class="icon-circle"><i class="fas fa-lightbulb"></i></div>
-                        <h4>Concevoir</h4>
-                        <p>Construire une architecture pédagogique pertinente</p>
-                    </div>
-                    <i class="fas fa-arrow-right step-arrow"></i>
-                    <div class="step">
-                        <div class="icon-circle"><i class="fas fa-cogs"></i></div>
-                        <h4>Déployer</h4>
-                        <p>Sélectionner et organiser les modalités adaptées</p>
-                    </div>
-                    <i class="fas fa-arrow-right step-arrow"></i>
-                    <div class="step">
-                        <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
-                        <h4>Évaluer</h4>
-                        <p>Mesurer l'impact et ajuster si besoin</p>
-                    </div>
+
+    <!-- ENJEUX & DEMARCHE -->
+    <section class="section-container section-split">
+        
+        <!-- Colonne Gauche : Enjeux -->
+        <div class="enjeux-text">
+            <h2>Des enjeux majeurs<br>pour vos organisations</h2>
+            <p>Face à l'évolution des métiers, aux nouvelles compétences à développer et aux attentes de vos collaborateurs, vous avez besoin de dispositifs de formation :</p>
+            <ul class="list-check">
+                <li><i class="fa-solid fa-check"></i> Alignés sur votre stratégie et vos objectifs</li>
+                <li><i class="fa-solid fa-check"></i> Adaptés à vos publics et à leurs besoins</li>
+                <li><i class="fa-solid fa-check"></i> Durables et mesurables</li>
+            </ul>
+        </div>
+
+        <!-- Colonne Droite : Démarche -->
+        <div class="demarche-text">
+            <h3>Ma démarche : une approche structurée et sur mesure</h3>
+            <div class="demarche-steps">
+                
+                <div class="demarche-step">
+                    <div class="demarche-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h4>Analyser</h4>
+                    <p>Comprendre votre contexte, vos objectifs et vos publics</p>
                 </div>
+                
+                <i class="fa-solid fa-arrow-right demarche-arrow"></i>
+
+                <div class="demarche-step">
+                    <div class="demarche-icon"><i class="fa-regular fa-lightbulb"></i></div>
+                    <h4>Concevoir</h4>
+                    <p>Construire une architecture pédagogique pertinente</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-right demarche-arrow"></i>
+
+                <div class="demarche-step">
+                    <div class="demarche-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h4>Déployer</h4>
+                    <p>Sélectionner et organiser les modalités adaptées</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-right demarche-arrow"></i>
+
+                <div class="demarche-step">
+                    <div class="demarche-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4>Évaluer</h4>
+                    <p>Mesurer l'impact et ajuster si besoin</p>
+                </div>
+
             </div>
         </div>
+
     </section>
 
-    <!-- SECTION DOMAINES -->
-    <section class="section">
-        <div class="container">
+
+    <!-- DOMAINES D'INTERVENTION -->
+    <section class="bg-light-blue">
+        <div class="section-container">
             <h2 class="section-title">Mes domaines d'intervention</h2>
-            <div class="grid-5-cols">
+            
+            <div class="domains-grid">
                 <div class="domain-item">
-                    <i class="fas fa-project-diagram"></i>
-                    <p>Architecture de parcours</p>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <p>Architecture<br>de parcours</p>
                 </div>
                 <div class="domain-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <p>Modalités pédagogiques présentielles, distancielles et blended</p>
+                    <i class="fa-solid fa-laptop"></i>
+                    <p>Modalités pédagogiques<br>présentielles, distancielles<br>et blended</p>
                 </div>
                 <div class="domain-item">
-                    <i class="fas fa-award"></i>
-                    <p>Référentiels et blocs de compétences</p>
+                    <i class="fa-solid fa-award"></i>
+                    <p>Référentiels et<br>blocs de compétences</p>
                 </div>
                 <div class="domain-item">
-                    <i class="fas fa-sync-alt"></i>
-                    <p>Parcours de reconversion et montée en compétences</p>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <p>Parcours de reconversion<br>et montée en compétences</p>
                 </div>
                 <div class="domain-item">
-                    <i class="fas fa-certificate"></i>
-                    <p>Dispositifs certifiants et formations sur mesure</p>
+                    <i class="fa-solid fa-file-signature"></i>
+                    <p>Dispositifs certifiants<br>et formations sur mesure</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION EXEMPLES -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Des exemples de cursus conçus sur mesure</h2>
-            <div class="grid-3-cols">
-                <!-- Carte 1 -->
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" alt="Formation IA">
-                    <div class="card-content">
-                        <h3>Formation à l'IA générative</h3>
-                        <p>Un parcours accessible et opérationnel pour maîtriser les usages de l'IA dans son quotidien professionnel.</p>
-                        <ul class="check-list-small">
-                            <li><i class="fas fa-check"></i> Parcours modulaire</li>
-                            <li><i class="fas fa-check"></i> Mise en pratique</li>
-                            <li><i class="fas fa-check"></i> Évaluation des acquis</li>
-                        </ul>
-                    </div>
+
+    <!-- EXEMPLES DE CURSUS -->
+    <section class="section-container">
+        <h2 class="section-title" style="margin-top: 40px;">Des exemples de cursus conçus sur mesure</h2>
+        
+        <div class="examples-grid">
+            
+            <!-- Carte 1 -->
+            <article class="example-card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Formation IA">
+                <div class="example-title">Formation à l'IA générative</div>
+                <div class="example-body">
+                    <p>Un parcours accessible et opérationnel pour maîtriser les usages de l'IA dans son quotidien professionnel.</p>
+                    <ul class="list-check">
+                        <li><i class="fa-solid fa-check"></i> Parcours modulaire (présentiel + e-learning)</li>
+                        <li><i class="fa-solid fa-check"></i> Mise en pratique sur cas métiers</li>
+                        <li><i class="fa-solid fa-check"></i> Évaluation des acquis</li>
+                    </ul>
                 </div>
-                <!-- Carte 2 -->
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="Métiers">
-                    <div class="card-content">
-                        <h3>Montée en compétences métiers</h3>
-                        <p>Un dispositif pour accompagner la transition des métiers vers les nouveaux enjeux de la transition énergétique.</p>
-                        <ul class="check-list-small">
-                            <li><i class="fas fa-check"></i> Parcours différenciés par métier</li>
-                            <li><i class="fas fa-check"></i> Mise en situation professionnelle</li>
-                            <li><i class="fas fa-check"></i> Certification des compétences</li>
-                        </ul>
-                    </div>
+            </article>
+
+            <!-- Carte 2 -->
+            <article class="example-card">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Métiers">
+                <div class="example-title">Montée en compétences métiers</div>
+                <div class="example-body">
+                    <p>Un dispositif pour accompagner la transition des métiers vers les nouveaux enjeux de la transition énergétique.</p>
+                    <ul class="list-check">
+                        <li><i class="fa-solid fa-check"></i> Parcours différenciés par métier</li>
+                        <li><i class="fa-solid fa-check"></i> Mise en situation professionnelle</li>
+                        <li><i class="fa-solid fa-check"></i> Certification des compétences</li>
+                    </ul>
                 </div>
-                <!-- Carte 3 -->
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=600" alt="Certifiant">
-                    <div class="card-content">
-                        <h3>Parcours certifiants</h3>
-                        <p>Une offre de formation certifiante combinant modules en ligne et accompagnement.</p>
-                        <ul class="check-list-small">
-                            <li><i class="fas fa-check"></i> Blocs de compétences</li>
-                            <li><i class="fas fa-check"></i> Suivi personnalisé</li>
-                            <li><i class="fas fa-check"></i> Certification reconnue</li>
-                        </ul>
-                    </div>
+            </article>
+
+            <!-- Carte 3 -->
+            <article class="example-card">
+                <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=600&q=80" alt="Certifiant">
+                <div class="example-title">Parcours certifiants</div>
+                <div class="example-body">
+                    <p>Une offre de formation certifiante combinant modules en ligne et accompagnement.</p>
+                    <ul class="list-check">
+                        <li><i class="fa-solid fa-check"></i> Blocs de compétences</li>
+                        <li><i class="fa-solid fa-check"></i> Suivi personnalisé</li>
+                        <li><i class="fa-solid fa-check"></i> Certification reconnue</li>
+                    </ul>
                 </div>
-            </div>
+            </article>
+
         </div>
     </section>
 
-    <!-- SECTION PARTENAIRE -->
-    <section class="section">
-        <div class="container">
+
+    <!-- PARTENAIRE -->
+    <section class="bg-light-blue">
+        <div class="section-container">
             <h2 class="section-title">Votre partenaire pour des dispositifs de formation à forte valeur ajoutée</h2>
-            <div class="grid-4-cols">
-                <div class="value-item">
-                    <i class="fas fa-handshake"></i>
-                    <p><strong>Une vision globale</strong><br>(organisation, métiers, compétences)</p>
+            
+            <div class="partner-grid">
+                <div class="partner-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>Une vision globale<br><span style="font-weight:400; font-size:12px;">(organisation, métiers, compétences)</span></p>
                 </div>
-                <div class="value-item">
-                    <i class="fas fa-users"></i>
-                    <p><strong>Une expertise reconnue</strong><br>en ingénierie pédagogique</p>
+                <div class="partner-item">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Une expertise reconnue<br><span style="font-weight:400; font-size:12px;">en ingénierie pédagogique</span></p>
                 </div>
-                <div class="value-item">
-                    <i class="fas fa-network-wired"></i>
-                    <p><strong>Une capacité à fédérer</strong><br>les experts et les parties prenantes</p>
+                <div class="partner-item">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <p>Une capacité à fédérer<br><span style="font-weight:400; font-size:12px;">les experts et les parties prenantes</span></p>
                 </div>
-                <div class="value-item">
-                    <i class="fas fa-bullseye"></i>
-                    <p><strong>Un engagement sur la qualité</strong><br>et l'impact</p>
+                <div class="partner-item">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <p>Un engagement sur la qualité<br><span style="font-weight:400; font-size:12px;">et l'impact</span></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BANNIERE CONTACT (CTA) -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="cta-banner">
-                <div class="cta-icon">
-                    <i class="far fa-envelope-open"></i>
-                </div>
-                <div class="cta-text">
-                    <h3>Parlons de votre projet</h3>
-                    <p>Prenons le temps d'échanger sur vos besoins. Je vous propose un premier audit gratuit, sans engagement, pour identifier ensemble les leviers d'action.</p>
-                </div>
-                <a href="mailto:contact@eveis-consulting.com" class="btn-white">Contactez-moi <i class="fas fa-arrow-right"></i></a>
-            </div>
+
+    <!-- CONTACT (Identique à l'accueil) -->
+    <section class="contact-band section-container" id="contact">
+        <div class="contact-icon">
+            <i class="fa-regular fa-envelope"></i>
         </div>
+        <div class="contact-separator"></div>
+        <div class="contact-text">
+            <h2>Parlons de votre projet</h2>
+            <p>
+                Prenons le temps d'échanger sur vos besoins. Je vous propose un premier audit gratuit, 
+                sans engagement, pour identifier ensemble les leviers d'action.
+            </p>
+        </div>
+        <a href="mailto:contact@eveis-consulting.fr" class="white-button contact-button">
+            Contactez-moi <i class="fa-solid fa-arrow-right"></i>
+        </a>
     </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="footer-inner section-container">
+        <div class="footer-brand">
+            <a href="index.html" class="brand footer-logo">
+                <span class="brand-name">EVEIS</span>
+                <span class="brand-subtitle">Consulting</span>
+            </a>
+            <p>Conseil et accompagnement au service de vos projets.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="#offres">Nos offres</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 EVEIS Consulting — Tous droits réservés.
+    </div>
+</footer>
 
 </body>
 </html>
