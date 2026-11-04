@@ -1092,14 +1092,14 @@ p {
     font-size: clamp(28px, 3vw, 42px);
     line-height: 1.1;
     font-weight: 800;
-    max-width: 700px;
+    max-width: 100%;
     margin-bottom: 15px;
 }
 .hero-offer p {
     color: var(--white);
     font-size: 18px;
     font-style: italic;
-    max-width: 650px;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 .hero-offer .title-underline {
