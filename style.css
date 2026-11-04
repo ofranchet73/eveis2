@@ -1072,3 +1072,260 @@ p {
         gap: 12px 18px;
     }
 }
+
+/* =========================================
+   PAGE OFFRE 1 (Spécifique)
+========================================= */
+
+/* Hero de l'offre */
+.hero-offer {
+    height: 320px;
+    position: relative;
+    background:
+        linear-gradient(90deg, rgba(8, 45, 85, 1) 0%, rgba(8, 45, 85, 0.9) 45%, rgba(8, 45, 85, 0.4) 100%),
+        url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1800&q=90") center 30% / cover;
+    display: flex;
+    align-items: center;
+}
+.hero-offer h1 {
+    color: var(--white);
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.1;
+    font-weight: 800;
+    max-width: 700px;
+    margin-bottom: 15px;
+}
+.hero-offer p {
+    color: var(--white);
+    font-size: 18px;
+    font-style: italic;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+.hero-offer .title-underline {
+    margin: 0;
+}
+
+/* Section Enjeux & Démarche (2 colonnes) */
+.section-split {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 50px;
+    padding: 50px 0;
+    align-items: center;
+}
+.enjeux-text h2 {
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.enjeux-text p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.list-check {
+    list-style: none;
+    padding: 0;
+}
+.list-check li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.list-check i {
+    color: var(--blue);
+    margin-top: 3px;
+}
+
+/* Démarche */
+.demarche-text h3 {
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.demarche-steps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.demarche-step {
+    text-align: center;
+    flex: 1;
+}
+.demarche-icon {
+    width: 65px;
+    height: 65px;
+    background: var(--navy);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto 15px auto;
+}
+.demarche-step h4 {
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.demarche-step p {
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.3;
+}
+.demarche-arrow {
+    color: var(--navy);
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+/* Section Domaines (5 colonnes) */
+.bg-light-blue {
+    background: var(--pale-blue);
+    padding: 40px 0;
+}
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+.domain-item {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid var(--border);
+}
+.domain-item:last-child {
+    border-right: none;
+}
+.domain-item i {
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+.domain-item p {
+    font-size: 13px;
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Section Exemples (3 cartes) */
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.example-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+.example-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.example-title {
+    background: var(--navy);
+    color: white;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.example-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.example-body p {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+/* Section Partenaire (4 colonnes) */
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.partner-item {
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid var(--border);
+}
+.partner-item:last-child {
+    border-right: none;
+}
+.partner-item i {
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+.partner-item p {
+    font-size: 13px;
+    color: var(--navy);
+    font-weight: 500;
+}
+
+/* Responsive spécifique Offre 1 */
+@media (max-width: 900px) {
+    .section-split {
+        grid-template-columns: 1fr;
+    }
+    .demarche-steps {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .demarche-arrow {
+        display: none;
+    }
+    .domains-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .domain-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 20px;
+    }
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 620px) {
+    .hero-offer {
+        height: auto;
+        padding: 40px 0;
+    }
+    .domains-grid {
+        grid-template-columns: 1fr;
+    }
+    .partner-grid {
+        grid-template-columns: 1fr;
+    }
+    .partner-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
