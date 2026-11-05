@@ -1330,16 +1330,19 @@ p {
     }
 }
 
-/* Logo officiel EVEIS */
-.logo-img {
-  width: 90px;
-  height: 45px;
-  object-fit: contain;
-  display: block;
+/* Logo header */
+header .brand img.logo-img {
+    width: 90px !important;
+    height: 45px !important;
+    max-width: 90px !important;
+    object-fit: contain;
 }
 
-.footer-logo .logo-img {
-  width: 80px;
-  height: 40px;
+/* Logo footer */
+footer .footer-logo img.logo-img {
+    width: 80px !important;
+    height: 40px !important;
+    max-width: 80px !important;
+    object-fit: contain;
 }
 
