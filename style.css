@@ -1329,3 +1329,16 @@ p {
         border-bottom: 1px solid var(--border);
     }
 }
+
+/* Logo officiel EVEIS */
+.logo-img {
+  width: 135px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo .logo-img {
+  width: 120px;
+  height: 55px;
+}
