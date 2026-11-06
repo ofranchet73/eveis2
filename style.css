@@ -274,7 +274,7 @@ p {
 }
 
 .hero h1 {
-   font-size: 48px;
+   font-size: clamp(32px, 3.8vw, 48px);
     line-height: 1.1;
     letter-spacing: -0.7px;
     font-weight: 800;
