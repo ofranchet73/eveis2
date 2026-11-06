@@ -1346,3 +1346,8 @@ footer .footer-logo img.logo-img {
     object-fit: contain;
 }
 
+/* Taille du texte du menu principal */
+header nav a {
+    font-size: 17px;
+    font-weight: 500;
+}
