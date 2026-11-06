@@ -133,8 +133,8 @@ p {
     gap: 6px;
     position: relative;
     color: #071e3b;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     white-space: nowrap;
 }
 
@@ -813,7 +813,7 @@ p {
 
     .main-nav > a,
     .nav-dropdown > a {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .brand {
@@ -894,7 +894,7 @@ p {
     .main-nav > a,
     .nav-dropdown > a {
         height: 28px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .main-nav > a.active::after {
