@@ -1332,17 +1332,17 @@ p {
 
 /* Logo header */
 header .brand img.logo-img {
-    width: 90px !important;
-    height: 45px !important;
-    max-width: 90px !important;
+    width: 150px !important;
+    height: 70px !important;
+    max-width: 150px !important;
     object-fit: contain;
 }
 
 /* Logo footer */
 footer .footer-logo img.logo-img {
-    width: 80px !important;
-    height: 40px !important;
-    max-width: 80px !important;
+    width: 120px !important;
+    height: 60px !important;
+    max-width: 120px !important;
     object-fit: contain;
 }
 
