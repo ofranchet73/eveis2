@@ -253,7 +253,8 @@ p {
 }
 
 .hero-copy {
-    max-width: 620px;
+    width: 100%;
+    max-width: 900px;
     color: white;
     padding: 10px 0;
 }
@@ -286,10 +287,10 @@ p {
 }
 
 .hero-description {
-    color: white;
+   color: white;
     font-size: 16px;
     line-height: 1.4;
-    max-width: 550px;
+    max-width: 850px;
     margin-bottom: 18px;
 }
 
