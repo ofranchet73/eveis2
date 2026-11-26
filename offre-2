@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EVEIS Consulting accompagne les TPE et PME dans la gestion opérationnelle de leurs réponses aux appels d'offres publics et privés.">
+  <title>Gestion des appels d'offres | EVEIS Consulting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        EVEIS Consulting
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="offre-1.html">Offre 1</a>
+        <a href="offre-2.html" class="active">Offre 2</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-brand">EVEIS CONSULTING</p>
+
+          <h1>
+            Gestion et accompagnement aux réponses
+            aux appels d'offres
+          </h1>
+
+          <div class="title-underline"></div>
+
+          <p class="hero-description">
+            De la veille des marchés publics et privés au suivi
+            des résultats, un accompagnement opérationnel pour
+            structurer vos réponses et piloter vos opportunités.
+          </p>
+
+          <p>
+            <strong>
+              Vous gardez la maîtrise de votre offre.
+              Je prends en charge sa gestion.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENJEUX ET ACCOMPAGNEMENT -->
+    <section class="section-container section-split">
+
+      <div class="enjeux-text">
+        <h2>Vous souhaitez répondre aux appels d'offres ?</h2>
+
+        <p>
+          Les appels d'offres représentent des opportunités de
+          développement pour les TPE et PME. Pourtant, leur
+          traitement demande du temps, de l'organisation et une
+          attention particulière aux exigences administratives
+          et documentaires.
+        </p>
+
+        <p>
+          Entre la veille, l'analyse des consultations, la
+          constitution des dossiers, la rédaction des réponses
+          et le respect des échéances, la charge de travail peut
+          rapidement devenir importante.
+        </p>
+
+        <p>
+          EVEIS Consulting vous accompagne dans la gestion
+          opérationnelle de ces démarches afin de vous permettre
+          de vous concentrer sur votre activité et sur le contenu
+          de votre offre.
+        </p>
+      </div>
+
+      <div class="demarche-text">
+        <h2>Un accompagnement opérationnel</h2>
+
+        <p>
+          J'interviens à vos côtés pour organiser et suivre
+          chaque étape de la réponse à un appel d'offres,
+          de l'identification des opportunités jusqu'à
+          l'analyse des résultats.
+        </p>
+
+        <p>
+          Mon rôle consiste à faciliter la gestion administrative,
+          documentaire et organisationnelle de vos candidatures.
+        </p>
+
+        <p>
+          Vous restez décisionnaire sur les opportunités à
+          saisir et conservez la maîtrise de vos éléments
+          techniques et financiers.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- LES ETAPES -->
+    <section class="section-container bg-light-blue">
+
+      <h2>Un accompagnement à chaque étape</h2>
+
+      <div class="demarche-steps">
+
+        <div class="demarche-step">
+          <div class="demarche-icon">01</div>
+
+          <h3>Détecter et sélectionner les opportunités</h3>
+
+          <p>
+            Consultation des plateformes de publication des
+            marchés publics et privés, identification des
+            opportunités pertinentes au regard de votre activité
+            et première analyse des exigences.
+          </p>
+
+          <p>
+            Présentation des consultations sélectionnées au
+            moyen d'une matrice d'analyse précisant notamment
+            les caractéristiques du marché, les contraintes,
+            les pièces attendues et les points de vigilance.
+          </p>
+
+          <p>
+            Vous décidez des opportunités auxquelles vous
+            souhaitez répondre.
+          </p>
+        </div>
+
+        <div class="demarche-step">
+          <div class="demarche-icon">02</div>
+
+          <h3>Constituer le dossier de candidature</h3>
+
+          <p>
+            Préparation et organisation des pièces administratives
+            nécessaires à la candidature : DC1, DC2 lorsqu'ils
+            sont requis, justificatifs, références et éléments
+            relatifs aux capacités techniques et financières.
+          </p>
+
+          <p>
+            Collecte des documents nécessaires et vérification
+            de la complétude du dossier au regard des exigences
+            de la consultation.
+          </p>
+        </div>
+
+        <div class="demarche-step">
+          <div class="demarche-icon">03</div>
+
+          <h3>Construire et déposer la réponse</h3>
+
+          <p>
+            Recueil de vos éléments techniques et financiers,
+            puis organisation de la réponse en fonction des
+            attentes exprimées par l'acheteur.
+          </p>
+
+          <p>
+            Accompagnement à la rédaction du mémoire technique
+            ou prise en charge complète de sa rédaction,
+            selon le périmètre de la mission convenu ensemble.
+          </p>
+
+          <p>
+            Vérification de la cohérence et de la complétude
+            du dossier, puis dépôt de la réponse sur la
+            plateforme dans le respect de l'échéance.
+          </p>
+        </div>
+
+        <div class="demarche-step">
+          <div class="demarche-icon">04</div>
+
+          <h3>Suivre et analyser les résultats</h3>
+
+          <p>
+            Suivi des réponses déposées, des notifications
+            et des résultats communiqués.
+          </p>
+
+          <p>
+            En cas de réponse infructueuse, analyse des
+            éléments de retour disponibles afin d'identifier
+            les éventuels axes d'amélioration et de tirer
+            des enseignements pour les prochaines consultations.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRESTATIONS -->
+    <section class="section-container">
+
+      <h2>Deux modalités d'accompagnement</h2>
+
+      <p>
+        Les interventions sont adaptées à votre organisation,
+        à vos besoins et au volume d'appels d'offres que vous
+        souhaitez traiter.
+      </p>
+
+      <div class="domains-grid">
+
+        <div class="domain-item">
+          <h3>Un accompagnement régulier</h3>
+
+          <p>
+            Pour les entreprises qui souhaitent structurer
+            leur démarche dans la durée.
+          </p>
+
+          <ul>
+            <li>Veille des marchés publics et privés</li>
+            <li>Sélection et présentation des opportunités</li>
+            <li>Analyse des consultations</li>
+            <li>Gestion des dossiers de candidature</li>
+            <li>Accompagnement aux réponses</li>
+            <li>Suivi des dépôts et des résultats</li>
+            <li>Tableaux de bord de suivi</li>
+          </ul>
+        </div>
+
+        <div class="domain-item">
+          <h3>Une intervention ponctuelle</h3>
+
+          <p>
+            Pour répondre à un besoin précis sur une
+            consultation identifiée.
+          </p>
+
+          <ul>
+            <li>Analyse d'un appel d'offres</li>
+            <li>Étude des exigences et des pièces attendues</li>
+            <li>Constitution du dossier de candidature</li>
+            <li>Préparation du mémoire technique</li>
+            <li>Vérification du dossier</li>
+            <li>Dépôt de la réponse</li>
+            <li>Suivi du résultat selon la mission définie</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REPARTITION DES ROLES -->
+    <section class="section-container bg-light-blue">
+
+      <h2>Une collaboration clairement définie</h2>
+
+      <p>
+        La réponse à un appel d'offres repose sur une
+        collaboration étroite : chacun intervient dans
+        son domaine et selon le périmètre défini ensemble.
+      </p>
+
+      <div class="partner-grid">
+
+        <div class="partner-item">
+          <h3>Votre entreprise</h3>
+
+          <ul>
+            <li>Décide des consultations auxquelles répondre</li>
+            <li>Apporte son expertise métier et technique</li>
+            <li>Transmet les éléments nécessaires à la réponse</li>
+            <li>Fournit les prix et éléments financiers</li>
+            <li>Communique ses références et justificatifs</li>
+            <li>Valide le contenu final de son offre</li>
+          </ul>
+        </div>
+
+        <div class="partner-item">
+          <h3>EVEIS Consulting</h3>
+
+          <ul>
+            <li>Assure la veille et la sélection des opportunités</li>
+            <li>Analyse les consultations</li>
+            <li>Organise les dossiers de candidature</li>
+            <li>Prépare les pièces administratives</li>
+            <li>Accompagne ou prend en charge la rédaction du mémoire technique</li>
+            <li>Vérifie la complétude du dossier</li>
+            <li>Effectue le dépôt sur la plateforme</li>
+            <li>Assure le suivi et l'analyse des résultats</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TABLEAUX DE BORD -->
+    <section class="section-container">
+
+      <h2>Des tableaux de bord pour piloter vos réponses</h2>
+
+      <p>
+        Pour assurer une vision claire des opportunités et
+        des candidatures en cours, je mets en place des
+        tableaux de bord de suivi adaptés à votre activité.
+      </p>
+
+      <p>
+        Ils permettent notamment de retrouver les consultations
+        identifiées, les décisions de réponse, les échéances,
+        l'état d'avancement des dossiers et les résultats.
+      </p>
+
+      <p>
+        Cet outil de suivi facilite la visibilité sur votre
+        activité de réponse aux appels d'offres et contribue
+        à structurer votre démarche dans le temps.
+      </p>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-band" id="contact">
+
+      <div class="section-container">
+        <h2>Vous souhaitez structurer vos réponses aux appels d'offres ?</h2>
+
+        <p>
+          Échangeons sur vos besoins et définissons ensemble
+          un accompagnement adapté à votre organisation.
+        </p>
+
+        <a href="mailto:contact@eveis-consulting.fr" class="btn">
+          Me contacter
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© EVEIS Consulting - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
