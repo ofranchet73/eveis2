@@ -1364,3 +1364,39 @@ footer .footer-logo img.logo-img {
         font-size: 15px;
     }
 }
+
+/* Espacement de la démarche - Offre 2 uniquement */
+.offre-2 .demarche-text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offre-2 .demarche-text > p {
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.offre-2 .demarche-steps {
+    gap: 15px;
+    align-items: stretch;
+}
+
+.offre-2 .demarche-step {
+    padding: 10px 8px;
+}
+
+.offre-2 .demarche-icon {
+    margin-bottom: 22px;
+}
+
+.offre-2 .demarche-step h4 {
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.offre-2 .demarche-step p {
+    font-size: 13px;
+    line-height: 1.7;
+}
